@@ -6,8 +6,8 @@ import time
 import openai
 
 # Set API key for OpenAI
-openai.api_key = "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" #API IRFAN
-# openai.api_key = "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" #API RIO
+# openai.api_key = "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" #API IRFAN
+openai.api_key = "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" #API RIO
 
 # The styling properties for the main content area class/ for chat AI
 def main_style():
@@ -440,3 +440,7 @@ def main(page: ft.Page):
 
 if __name__ == "__main__":
     ft.app(target=main)
+
+# 2. Metode yang diOverride
+    # ada yaitu pada class MessageOutput yang mana terdapat metode animate_text_output yang di override atau digantikan dari kelas induknya yaitu class MessageOutput ke kelas turunannya yaitu UserOutput dan GptOutput. pergantian itu mengubah perilaku metode yang ada pada kelas induknya ke kelas turunannya. 
+# 3. class baru
